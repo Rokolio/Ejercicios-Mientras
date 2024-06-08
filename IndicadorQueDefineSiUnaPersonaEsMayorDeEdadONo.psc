@@ -10,8 +10,10 @@ Algoritmo IndicadorQueDefineSiUnaPersonaEsMayorDeEdadONo
 	sumajovenadulto <- 0
     sumaadulto <- 0
     sumaadultomayor <- 0
+	
 	Escribir "Ingrese la edad del primer postulante";
 	Leer edad;
+	
     Mientras edad >= 18 hacer;
         Escribir "Ingrese la edad del siguiente postulante:";
         Leer edad;
@@ -30,7 +32,6 @@ Algoritmo IndicadorQueDefineSiUnaPersonaEsMayorDeEdadONo
             Escribir "Categoría: Adulto Mayor"
             sumaAdultoMayor <- sumaAdultoMayor + edad
 		FinSi
-
 	FinMientras
 	
 	Escribir "Suma de las edades de Joven Adulto (18-25): ", sumajovenadulto
