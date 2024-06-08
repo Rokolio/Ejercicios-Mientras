@@ -5,27 +5,28 @@
 // b. 26 - 50 -> Adulto
 // c. 51 - 100 -> Adulto Mayor
 Algoritmo ProgramaCapazDeDeterminarSiUnPostulanteEsMayorDeEdad
-	Definir edad, jovenadulto, adulto, adultomayor como entero
+	Definir edad como entero
+	Escribir "Ingrese la edad del postulante";
+	Leer edad
 	jovenadulto <- 0
 	adulto <- 0
 	adultomayor <- 0
-	Escribir "Ingrese la edad del postulante";
-	Leer edad
+	
 	Mientras edad >= 18 Hacer
 		Si edad<18 Entonces
 			Escribir "Edad menor a 18 ingresada, por lo tanto postulante es menor de edad";
 		FinSi
 		Si edad>=18 Y edad<=25 Entonces
 			Escribir "Categoría: Joven Adulto";
-			jovenadulto <- jovenadulto+edad
+			jovenadulto <- jovenadulto+1
 		FinSi
 		Si edad>=26 Y edad<=50 Entonces
 			Escribir "Categoría: Adulto";
-			adulto <- adulto+edad
+			adulto <- adulto+1
 		FinSi
 		Si edad>=51 Y edad<=100 Entonces
 			Escribir "Categoría: Adulto Mayor";
-			adultomayor <- adultomayor+edad
+			adultomayor <- adultomayor+1
 		FinSi
 		
 			Escribir "Ingrese la edad del siguiente postulante";
@@ -33,7 +34,7 @@ Algoritmo ProgramaCapazDeDeterminarSiUnPostulanteEsMayorDeEdad
 		
 	FinMientras
 
-	Escribir 'La sumatoria de las edades de jovenes adultos (18-25) es: ', jovenadulto
-	Escribir 'La sumatoria de las edades de adulto (26-50) es: ', adulto
-	Escribir 'La sumatoria de las edades de adulto mayores (51-100) es: ', adultomayor
+	Escribir 'La cantidad de jovenes adultos (18-25) es: ', jovenadulto
+	Escribir 'La cantidad de adultos (26-50) es: ', adulto
+	Escribir 'La cantidad de adultos mayores (51-100) es: ', adultomayor
 FinAlgoritmo
