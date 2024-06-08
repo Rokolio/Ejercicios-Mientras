@@ -28,10 +28,10 @@ Algoritmo ProgramaCapazDeDeterminarSiUnPostulanteEsMayorDeEdad
 			Escribir "Categoría: Adulto Mayor";
 			adultomayor <- adultomayor+1
 		FinSi
-		
+		Esperar Tecla
+		Limpiar Pantalla
 			Escribir "Ingrese la edad del siguiente postulante";
 			Leer edad;
-		
 	FinMientras
 
 	Escribir 'La cantidad de jovenes adultos (18-25) es: ', jovenadulto
